@@ -38,7 +38,28 @@ export default {
     };
   },
   created() {
-    this.products=this.$store.state.categories.pc.productList
+    this.products = [
+      {
+        name: "数据统计",
+        url: "/detail/statistics",
+        imgUrl: "./static/images/board-open.png"
+      },
+      {
+        name: "数据预测",
+        url: "/detail/forecast",
+        imgUrl: "./static/images/board-broadcast.png"
+      },
+      {
+        name: "流量分析",
+        url: "/detail/analysis",
+        imgUrl: "./static/images/board-duty.png"
+      },
+      {
+        name: "广告发布",
+        url: "/detail/publish",
+        imgUrl: "./static/images/board-climb.png"
+      }
+    ];
   }
 };
 </script>
