@@ -12,7 +12,7 @@
             :to="product.url"
             v-for="(product,index) in products"
             :key="index"
-            tag="li" replace>
+            tag="li">
           {{product.name}}
         </router-link>
         <!-- </li> -->
@@ -42,28 +42,28 @@ export default {
       {
         name: "数据统计",
         url: "/detail/statistics",
-        imgUrl: "./static/images/board-open.png"
+        imgUrl: "/vue-demoWithVuex/static/images/board-open.png"
       },
       {
         name: "数据预测",
         url: "/detail/forecast",
-        imgUrl: "./static/images/board-broadcast.png"
+        imgUrl: "/vue-demoWithVuex/static/images/board-broadcast.png"
       },
       {
         name: "流量分析",
         url: "/detail/analysis",
-        imgUrl: "./static/images/board-duty.png"
+        imgUrl: "/vue-demoWithVuex/static/images/board-duty.png"
       },
       {
         name: "广告发布",
         url: "/detail/publish",
-        imgUrl: "./static/images/board-climb.png"
+        imgUrl: "/vue-demoWithVuex/static/images/board-climb.png"
       }
     ];
     this.products.forEach(product => {
-          // this.imgMap[product.url] = product.imgUrl;
-          this.$set(this.imgMap, product.url, product.imgUrl);
-        });
+      // this.imgMap[product.url] = product.imgUrl;
+      this.$set(this.imgMap, product.url, product.imgUrl);
+    });
   }
 };
 </script>
