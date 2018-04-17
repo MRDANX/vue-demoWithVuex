@@ -20,7 +20,7 @@ Vue.use(Router)
 
 var router = new Router({
   mode: 'history',
-  base: '/',
+  base: '/vue-demoWithVuex',
   routes: [{
       path: '/(index.html)?',
       name: 'home',

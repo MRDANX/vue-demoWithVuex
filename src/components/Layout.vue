@@ -141,21 +141,21 @@ export default {
         ]
       });
     }, 1800);
-  },
-  created() {
-    // console.log(this.$route);
-    // console.log(this.$router);
-    let params = new URLSearchParams();
-    this.$http
-      .post("/login", params)
-      .then(result => {
-        if (result.data) this.loginValidate(result.data);
-      })
-      .catch(err => {
-        console.log("created: ", err);
-        return false;
-      });
   }
+  // created() {
+  //   // console.log(this.$route);
+  //   // console.log(this.$router);
+  //   // let params = new URLSearchParams();
+  //   // this.$http
+  //   //   .post("/login", params)
+  //   //   .then(result => {
+  //   //     if (result.data) this.loginValidate(result.data);
+  //   //   })
+  //   //   .catch(err => {
+  //   //     console.log("created: ", err);
+  //   //     return false;
+  //   //   });
+  // }
 };
 </script>
 
