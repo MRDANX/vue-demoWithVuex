@@ -114,37 +114,31 @@ export default {
     }
   },
   beforeCreate() {
-    //initial newsList
-    this.$http("/api/newsList").then(result => {
-      this.$store.commit({
-        type: "home/initData",
-        initWhat: "newsList",
-        data: result.data
-      });
-    });
-    this.$http("/api/categories").then(result => {
-      this.$store.commit({
-        type: "home/initData",
-        initWhat: "categories",
-        data: result.data
-      });
-    });
-    //initial newsList
-    this.$http("/api/boardList").then(result => {
-      this.$store.commit({
-        type: "home/initData",
-        initWhat: "boardList",
-        data: result.data
-      });
-    });
     //initial carouselPics
     setTimeout(() => {
-      this.$http("/api/carouselPics").then(result => {
-        this.$store.commit({
-          type: "home/initData",
-          initWhat: "carouselPics",
-          data: result.data
-        });
+      this.$store.commit({
+        type: "home/initData",
+        initWhat: "carouselPics",
+        data: [
+          {
+            title: "日本SQUARE发行的角色扮演类电视游戏系列",
+            url: "../../static/images/carousel-1.jpg"
+          },
+          {
+            title: "由日本Falcom公司开发制作并发行的一款角色扮演类游戏",
+            url: "../../static/images/carousel-2.jpg"
+          },
+          {
+            title:
+              "2017年度终极剧情版本“青龙换世”震撼来袭,全新神兵甲子录静候探索",
+            url: "../../static/images/carousel-3.jpg"
+          },
+          {
+            title:
+              "“这虽然是游戏，但可不是闹着玩的。”——“刀剑神域（Sword Art Online）”设计者茅场晶彦",
+            url: "../../static/images/carousel-4.png"
+          }
+        ]
       });
     }, 1800);
   },
