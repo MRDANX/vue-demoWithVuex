@@ -60,6 +60,10 @@ export default {
         imgUrl: "./static/images/board-climb.png"
       }
     ];
+    this.products.forEach(product => {
+          // this.imgMap[product.url] = product.imgUrl;
+          this.$set(this.imgMap, product.url, product.imgUrl);
+        });
   }
 };
 </script>
