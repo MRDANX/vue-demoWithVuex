@@ -10,22 +10,22 @@ export default {
         "productList": [{
             "name": "数据统计",
             "url": "/detail/statistics",
-            "imgUrl": "../../static/images/board-open.png"
+            "imgUrl": "./static/images/board-open.png"
           },
           {
             "name": "数据预测",
             "url": "/detail/forecast",
-            "imgUrl": "../../static/images/board-broadcast.png"
+            "imgUrl": "./static/images/board-broadcast.png"
           },
           {
             "name": "流量分析",
             "url": "/detail/analysis",
-            "imgUrl": "../../static/images/board-duty.png"
+            "imgUrl": "./static/images/board-duty.png"
           },
           {
             "name": "广告发布",
             "url": "/detail/publish",
-            "imgUrl": "../../static/images/board-climb.png"
+            "imgUrl": "./static/images/board-climb.png"
           }
         ]
       },
@@ -81,25 +81,25 @@ export default {
         "title": "开放产品",
         "desc": "开放产品是一款开放产品",
         "url": "detail",
-        "imgUrl": "../../static/images/board-open.png"
+        "imgUrl": "./static/images/board-open.png"
       },
       {
         "title": "品牌营销",
         "desc": "品牌营销帮助你的产品更好地找到定位",
         "url": "detail",
-        "imgUrl": "../../static/images/board-broadcast.png"
+        "imgUrl": "./static/images/board-broadcast.png"
       },
       {
         "title": "使命必达",
         "desc": "使命必达快速迭代永远保持最前端的速度",
         "url": "detail",
-        "imgUrl": "../../static/images/board-duty.png"
+        "imgUrl": "./static/images/board-duty.png"
       },
       {
         "title": "勇攀高峰",
         "desc": "帮你勇闯高峰，到达事业的顶峰",
         "url": "detail",
-        "imgUrl": "../../static/images/board-climb.png"
+        "imgUrl": "./static/images/board-climb.png"
       }
     ],
     carouselPics: [{

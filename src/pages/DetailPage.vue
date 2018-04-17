@@ -37,20 +37,8 @@ export default {
       imgMap: {}
     };
   },
-  methods: {
-    getProducts() {
-      this.$http("/api/categories").then(result => {
-        let products = result.data.pc.productList;
-        products.forEach(product => {
-          // this.imgMap[product.url] = product.imgUrl;
-          this.$set(this.imgMap, product.url, product.imgUrl);
-        });
-        this.products = products;
-      });
-    }
-  },
   created() {
-    this.getProducts();
+    this.products=this.$store.state.categories.pc.productList
   }
 };
 </script>
